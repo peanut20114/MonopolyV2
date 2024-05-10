@@ -33,10 +33,10 @@ namespace Client
         {
             FirebaseResponse res = await client.GetAsync("USER/" + Program.UserID);
             User data = res.ResultAs<User>();
-            richTextBox2.Text = data.UserName;
-            richTextBox3.Text = data.Birthday;
-            richTextBox4.Text = data.Country;
-            richTextBox5.Text = data.Last_Logged_In;
+            richTextBox2.Text = data.username;
+            richTextBox3.Text = data.birthday;
+            richTextBox4.Text = data.country;
+            richTextBox5.Text = data.last_logged_in;
         }
     }
 }

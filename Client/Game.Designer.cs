@@ -789,11 +789,7 @@
             this.Name = "Game";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-<<<<<<< HEAD
-            this.Text = "Gameplay";
-=======
             this.Text = "Monopoly";
->>>>>>> b42af44c8ddd5e45e38a0f4639a329326095fe76
             ((System.ComponentModel.ISupportInitialize)(this.redPawnIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bluePawnIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile0)).EndInit();

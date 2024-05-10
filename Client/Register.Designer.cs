@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.label1 = new System.Windows.Forms.Label();
-            this.UserNameButton = new System.Windows.Forms.RichTextBox();
+            this.UserNameTBox = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.EmailButton = new System.Windows.Forms.RichTextBox();
+            this.EmailTBox = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.PasswordTBox = new System.Windows.Forms.RichTextBox();
             this.CreateButton = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -55,14 +55,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "User name";
             // 
-            // UserNameButton
+            // UserNameTBox
             // 
-            this.UserNameButton.Location = new System.Drawing.Point(65, 191);
-            this.UserNameButton.Margin = new System.Windows.Forms.Padding(2);
-            this.UserNameButton.Name = "UserNameButton";
-            this.UserNameButton.Size = new System.Drawing.Size(245, 22);
-            this.UserNameButton.TabIndex = 1;
-            this.UserNameButton.Text = "";
+            this.UserNameTBox.Location = new System.Drawing.Point(65, 191);
+            this.UserNameTBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UserNameTBox.Name = "UserNameTBox";
+            this.UserNameTBox.Size = new System.Drawing.Size(245, 22);
+            this.UserNameTBox.TabIndex = 1;
+            this.UserNameTBox.Text = "";
             // 
             // label2
             // 
@@ -77,14 +77,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Email";
             // 
-            // EmailButton
+            // EmailTBox
             // 
-            this.EmailButton.Location = new System.Drawing.Point(65, 237);
-            this.EmailButton.Margin = new System.Windows.Forms.Padding(2);
-            this.EmailButton.Name = "EmailButton";
-            this.EmailButton.Size = new System.Drawing.Size(245, 22);
-            this.EmailButton.TabIndex = 3;
-            this.EmailButton.Text = "";
+            this.EmailTBox.Location = new System.Drawing.Point(65, 237);
+            this.EmailTBox.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailTBox.Name = "EmailTBox";
+            this.EmailTBox.Size = new System.Drawing.Size(245, 22);
+            this.EmailTBox.TabIndex = 3;
+            this.EmailTBox.Text = "";
             // 
             // label3
             // 
@@ -112,19 +112,19 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Password";
             // 
-            // richTextBox1
+            // PasswordTBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(65, 327);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(245, 22);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
+            this.PasswordTBox.Location = new System.Drawing.Point(65, 327);
+            this.PasswordTBox.Margin = new System.Windows.Forms.Padding(2);
+            this.PasswordTBox.Name = "PasswordTBox";
+            this.PasswordTBox.Size = new System.Drawing.Size(245, 22);
+            this.PasswordTBox.TabIndex = 7;
+            this.PasswordTBox.Text = "";
             // 
             // CreateButton
             // 
             this.CreateButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateButton.Location = new System.Drawing.Point(384, 237);
+            this.CreateButton.Location = new System.Drawing.Point(368, 244);
             this.CreateButton.Margin = new System.Windows.Forms.Padding(2);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(166, 53);
@@ -137,15 +137,15 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
             "10",
             "11",
             "12",
@@ -172,7 +172,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(54, 21);
             this.comboBox1.TabIndex = 9;
-            this.comboBox1.SelectedIndex = 0;
             // 
             // comboBox2
             // 
@@ -194,7 +193,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(105, 21);
             this.comboBox2.TabIndex = 10;
-            this.comboBox2.SelectedIndex = 0;
             // 
             // comboBox3
             // 
@@ -249,7 +247,6 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(75, 21);
             this.comboBox3.TabIndex = 11;
-            this.comboBox3.SelectedIndex = 0;
             // 
             // Register
             // 
@@ -261,16 +258,17 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.CreateButton);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.PasswordTBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.EmailButton);
+            this.Controls.Add(this.EmailTBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.UserNameButton);
+            this.Controls.Add(this.UserNameTBox);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Register";
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,12 +277,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox UserNameButton;
+        private System.Windows.Forms.RichTextBox UserNameTBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox EmailButton;
+        private System.Windows.Forms.RichTextBox EmailTBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox PasswordTBox;
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;

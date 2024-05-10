@@ -33,36 +33,19 @@
             this.continueBtn = new System.Windows.Forms.Button();
             this.AccountInput = new System.Windows.Forms.TextBox();
             this.PasswordInput = new System.Windows.Forms.TextBox();
+            this.ForgotLink = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-<<<<<<< HEAD
-=======
-            // AccountInput
-            // 
-            this.AccountInput.Location = new System.Drawing.Point(272, 394);
-            this.AccountInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AccountInput.Name = "AccountInput";
-            this.AccountInput.Size = new System.Drawing.Size(604, 52);
-            this.AccountInput.TabIndex = 0;
-            this.AccountInput.Text = "";
-            // 
->>>>>>> b42af44c8ddd5e45e38a0f4639a329326095fe76
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(200, 339);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(121, 168);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Your email or user name";
-            this.label1.Location = new System.Drawing.Point(200, 338);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(600, 41);
+            this.label1.Size = new System.Drawing.Size(165, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Your email or username";
             // 
@@ -72,38 +55,20 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(200, 472);
-            this.label2.Location = new System.Drawing.Point(200, 473);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(121, 224);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 41);
+            this.label2.Size = new System.Drawing.Size(105, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Your password";
             // 
-<<<<<<< HEAD
-=======
-            // PasswordInput
-            // 
-            this.PasswordInput.HideSelection = false;
-            this.PasswordInput.Location = new System.Drawing.Point(272, 531);
-            this.PasswordInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PasswordInput.Name = "PasswordInput";
-            this.PasswordInput.Size = new System.Drawing.Size(604, 52);
-            this.PasswordInput.TabIndex = 3;
-            this.PasswordInput.Text = "";
-            // 
->>>>>>> b42af44c8ddd5e45e38a0f4639a329326095fe76
             // continueBtn
             // 
             this.continueBtn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continueBtn.Location = new System.Drawing.Point(475, 611);
-            this.continueBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.continueBtn.Location = new System.Drawing.Point(239, 282);
+            this.continueBtn.Margin = new System.Windows.Forms.Padding(2);
             this.continueBtn.Name = "continueBtn";
-            this.continueBtn.Size = new System.Drawing.Size(220, 61);
-            this.continueBtn.Location = new System.Drawing.Point(474, 612);
-            this.continueBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.continueBtn.Name = "continueBtn";
-            this.continueBtn.Size = new System.Drawing.Size(220, 62);
+            this.continueBtn.Size = new System.Drawing.Size(110, 32);
             this.continueBtn.TabIndex = 4;
             this.continueBtn.Text = "Continue";
             this.continueBtn.UseVisualStyleBackColor = true;
@@ -111,37 +76,50 @@
             // 
             // AccountInput
             // 
-            this.AccountInput.Location = new System.Drawing.Point(156, 314);
+            this.AccountInput.Location = new System.Drawing.Point(179, 190);
+            this.AccountInput.Margin = new System.Windows.Forms.Padding(2);
             this.AccountInput.Name = "AccountInput";
-            this.AccountInput.Size = new System.Drawing.Size(439, 26);
+            this.AccountInput.Size = new System.Drawing.Size(222, 20);
             this.AccountInput.TabIndex = 5;
             // 
             // PasswordInput
             // 
-            this.PasswordInput.Location = new System.Drawing.Point(156, 412);
+            this.PasswordInput.HideSelection = false;
+            this.PasswordInput.Location = new System.Drawing.Point(179, 246);
+            this.PasswordInput.Margin = new System.Windows.Forms.Padding(2);
             this.PasswordInput.Name = "PasswordInput";
-            this.PasswordInput.Size = new System.Drawing.Size(439, 26);
+            this.PasswordInput.Size = new System.Drawing.Size(222, 20);
             this.PasswordInput.TabIndex = 6;
-            this.PasswordInput.UseSystemPasswordChar = true;
+            this.PasswordInput.TextChanged += new System.EventHandler(this.PasswordInput_TextChanged);
+            // 
+            // ForgotLink
+            // 
+            this.ForgotLink.AutoSize = true;
+            this.ForgotLink.BackColor = System.Drawing.Color.Transparent;
+            this.ForgotLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.ForgotLink.LinkColor = System.Drawing.Color.White;
+            this.ForgotLink.Location = new System.Drawing.Point(233, 320);
+            this.ForgotLink.Name = "ForgotLink";
+            this.ForgotLink.Size = new System.Drawing.Size(123, 18);
+            this.ForgotLink.TabIndex = 7;
+            this.ForgotLink.TabStop = true;
+            this.ForgotLink.Text = "Forgot Password";
+            this.ForgotLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ForgotLink_LinkClicked);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Client.Properties.Resources.Help;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(876, 555);
-=======
-            this.ClientSize = new System.Drawing.Size(1168, 694);
-            this.Controls.Add(this.continueBtn);
->>>>>>> b42af44c8ddd5e45e38a0f4639a329326095fe76
+            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.ForgotLink);
             this.Controls.Add(this.PasswordInput);
             this.Controls.Add(this.AccountInput);
             this.Controls.Add(this.continueBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
@@ -158,5 +136,6 @@
         private System.Windows.Forms.Button continueBtn;
         private System.Windows.Forms.TextBox AccountInput;
         private System.Windows.Forms.TextBox PasswordInput;
+        private System.Windows.Forms.LinkLabel ForgotLink;
     }
 }

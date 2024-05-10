@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
 using System.Numerics;
-using FirebaseAdmin.Auth;
 
 namespace Client
 {
